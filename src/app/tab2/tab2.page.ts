@@ -9,12 +9,12 @@ import { HttpClient } from '@angular/common/http';
 export class Tab2Page {
     constructor(private http: HttpClient) { }
 
-    const url = 'http://muslimsalat.com/daily/germantown,md/false/4.json?daylight=true&key=1c3a4c02e05270965adc5a20f0038092';
-    const fajr = '';
-    const dhuhr = '';
-    const asr = '';
-    const maghrib = '';
-    const isha = '';
+    url = 'http://muslimsalat.com/daily/germantown,md/false/4.json?daylight=true&key=1c3a4c02e05270965adc5a20f0038092';
+    fajr = '';
+    dhuhr = '';
+    asr = '';
+    maghrib = '';
+    isha = '';
     // called on demand by Angular
     ngOnInit() {
         this.http.get(this.url).subscribe(
